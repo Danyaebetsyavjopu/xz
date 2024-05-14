@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приложение с квартирами</title>
-    <style>
-        .flat {
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-            display: inline-block;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог квартир</title>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+  }
+  .apartment {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 300px; /* You can adjust the width */
+  }
+  .apartment img {
+    width: 100%;
+    height: auto;
+  }
+</style>
 </head>
 <body>
-    <h1>Квартиры</h1>
 
-    <div class="flat">
-        <img src="квартира1.webp" alt="Квартира 1">
-        <p>Квартира 1</p>
-    </div>
-    <div class="flat">
-        <img src="квартира2.webp" alt="Квартира 2">
-        <p>Квартира 2</p>
-    </div>
-    <div class="flat">
-        <img src="квартира3.webp" alt="Квартира 3">
-        <p>Квартира 3</p>
-    </div>
-    <div class="flat">
-        <img src="квартира4.jpg" alt="Квартира 4">
-        <p>Квартира 4</p>
-    </div>
+<h1>Каталог квартир</h1>
+
+<div class="container">
+  <!-- Квартира 1 -->
+  <div class="apartment">
+    <img src="apartment1.jpg" alt="Фото квартиры 1">
+    <h2>Квартира в центре</h2>
+    <p>Описание квартиры 1. Текст...</p>
+    <p>Цена: $1000 / месяц</p>
+    <p>Контакты: 123-456-7890</p>
+  </div>
+
+  <!-- Квартира 2 -->
+  <div class="apartment">
+    <img src="apartment2.jpg" alt="Фото квартиры 2">
+    <h2>Квартира у парка</h2>
+    <p>Описание квартиры 2. Текст...</p>
+    <p>Цена: $1200 / месяц</p>
+    <p>Контакты: 234-567-8901</p>
+  </div>
+
+  <!-- Добавьте дополнительные квартиры по аналогии -->
+</div>
 
 </body>
 </html>
-
