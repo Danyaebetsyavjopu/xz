@@ -1,57 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Web App</title>
-    <style>
-        .flat {
-            width: 150px;
-            display: inline-block;
-            margin: 150px;
-            text-align: center;
-        }
-    </style>
-</head>
+    <title>Фастфуд</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
-    <div id="main">
-        <h1>Каталог квартир</h1>
 
-        <div class="flat">
-            <img scr="apartament1.jpg" alt="Квартира 1">
-            <p>Ты олух обоссаный.</p>
-            <button onclick="showDetails('flat1')">Подробнее</button>
+    <header>
+        <div class="container">
+            <h1><a href="/">Фастфуд</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/menu">Меню</a></li>
+                    <li><a href="/about">О нас</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
+                    <li><a href="/cart">Корзина</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="flat">
-            <img src="apartament2.jpg" alt="Квартира 2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ipsum magni, molestias.</p>
-            <button onclick="showDetails('flat2')">Подробнее</button>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Быстро, вкусно, удобно!</h2>
+                <p>Закажите любимую еду онлайн!</p>
+                <a href="/menu" class="button">Перейти в меню</a>
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="container">
+                <h2>Популярные блюда</h2>
+                <div class="products">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Фастфуд</p>
         </div>
-    </div>
+    </footer>
 
-    <div id="details" style="display: none;">
-        <h2>Подробная информация</h2>
-        <p id="detailsText"></p>
-        <button onclick="goBack()">Назад</button>
-    </div>
-
-    <script>
-        function showDetails(flat) {
-            document.getElementById('main').style.display = 'none';
-            document.getElementById('details').style.display = 'block';
-
-            if (flat === 'flat1') {
-                document.getElementById('detailsText').innerText = 'Дополнительная информация о квартире 1.';
-            } else if (flat === 'flat2') {
-                document.getElementById('detailsText').innerText = 'Дополнительная информация о квартире 2.';
-            }
-        }
-
-        function goBack() {
-            document.getElementById('main').style.display = 'block';
-            document.getElementById('details').style.display = 'none';
-        }
-    </script>
+    <script src="script.js"></script> 
 </body>
 </html>
