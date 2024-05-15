@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фастфуд</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <header>
@@ -12,32 +13,77 @@
             <h1><a href="/">Фастфуд</a></h1>
             <nav>
                 <ul>
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="/menu">Меню</a></li>
-                    <li><a href="/about">О нас</a></li>
-                    <li><a href="/contacts">Контакты</a></li>
-                    <li><a href="/cart">Корзина</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#cart">Корзина</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <div class="container">
                 <h2>Быстро, вкусно, удобно!</h2>
                 <p>Закажите любимую еду онлайн!</p>
-                <a href="/menu" class="button">Перейти в меню</a>
+                <a href="#menu" class="button">Перейти в меню</a>
             </div>
         </section>
 
-        <section class="popular">
+        <section id="menu" class="menu">
             <div class="container">
-                <h2>Популярные блюда</h2>
-                <div class="products">
-                    </div>
+                <h2>Наше меню</h2>
+
+                <div class="category" id="burgers">
+                    <h3>Бургеры</h3>
+                    <div class="products">
+                        <div class="product">
+                            <img src="images/burger1.jpg" alt="Бургер 1">
+                            <h4>Бургер 1</h4>
+                            <p>Описание бургера 1...</p>
+                            <span class="price">250 руб.</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="category" id="pizzas">
+                    <h3>Пиццы</h3>
+                    <div class="products">
+                        </div>
+                </div>
+
+                </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>Информация о вашем магазине фастфуда...</p>
             </div>
         </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <p>Адрес, телефон, email...</p>
+            </div>
+        </section>
+
+        <section id="cart" class="cart">
+            <div class="container">
+                <h2>Корзина</h2>
+                <div class="cart-items">
+                    </div>
+                <div class="total">
+                    <strong>Итого:</strong> <span class="total-price">0 руб.</span>
+                </div>
+                <button class="checkout">Оформить заказ</button>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -46,6 +92,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>
+
+
