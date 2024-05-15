@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Каталог квартир</title>
-<style>
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 20px;
-  }
-  .apartment {
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 300px; /* You can adjust the width */
-  }
-  .apartment img {
-    width: 100%;
-    height: auto;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог недвижимости</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 16px;
+        }
+        .photo-link {
+            display: block;
+            border: 1px solid #ccc;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+        .photo-link img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .photo-link:hover {
+            border-color: #007bff;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Каталог квартир</h1>
+<h1>Каталог недвижимости</h1>
 
-<div class="container">
-  <!-- Квартира 1 -->
-  <div class="apartment">
-    <img src="apartment1.jpg" alt="Фото квартиры 1">
-    <h2>Квартира в центре</h2>
-    <p>Описание квартиры 1. Текст...</p>
-    <p>Цена: $1000 / месяц</p>
-    <p>Контакты: 123-456-7890</p>
-  </div>
-
-  <!-- Квартира 2 -->
-  <div class="apartment">
-    <img src="apartment2.jpg" alt="Фото квартиры 2">
-    <h2>Квартира у парка</h2>
-    <p>Описание квартиры 2. Текст...</p>
-    <p>Цена: $1200 / месяц</p>
-    <p>Контакты: 234-567-8901</p>
-  </div>
-
-  <!-- Добавьте дополнительные квартиры по аналогии -->
+<div class="gallery">
+    <a href="/apartment1/" class="photo-link">
+        <img src="/images/apartment1.jpg" alt="Апартаменты 1">
+        <p>Квартира номер 1</p>
+    </a>
+    <a href="/apartment2/" class="photo-link">
+        <img src="/images/apartment2.jpg" alt="Апартаменты 2">
+        <p>Квартира номер 2</p>
+    </a>
+    <!-- Добавьте столько элементов <a>, сколько нужно для остальных квартир -->
 </div>
 
 </body>
